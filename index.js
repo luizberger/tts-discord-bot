@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 const { tts } = require('./utils');
-const settings = require('./settings');
 
 client.on('ready', async () => {
     console.log(`Logged in as ${client.user.tag}!`);
@@ -31,4 +30,4 @@ client.on('message', async message => {
     }
 });
 
-client.login(settings.token);
+client.login(process.env.BOT_TOKEN);

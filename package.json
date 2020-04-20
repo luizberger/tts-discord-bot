@@ -12,5 +12,8 @@
     "@discordjs/opus": "^0.1.0",
     "axios": "^0.19.2",
     "discord.js": "^12.2.0"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
